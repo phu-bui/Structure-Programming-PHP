@@ -1,0 +1,3 @@
+id,name,email,password,role,remember_token,created_at,updated_at
+1,Admin,admin@gmail.com,admin01,1,NULL,NULL,NULL
+2,Admin2,admin2@gmail.com,admin02,1,NULL,NULL,NULL

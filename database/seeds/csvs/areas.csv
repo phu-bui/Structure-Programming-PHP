@@ -1,0 +1,64 @@
+id,province_no,name,sort_order
+1,01,Thành phố Hà Nội,1
+2,02,Tỉnh Hà Giang,2
+3,04,Tỉnh Cao Bằng,3
+4,06,Tỉnh Bắc Kạn,4
+5,08,Tỉnh Tuyên Quang,5
+6,10,Tỉnh Lào Cai,6
+7,11,Tỉnh Điện Biên,7
+8,12,Tỉnh Lai Châu,8
+9,14,Tỉnh Sơn La,9
+10,15,Tỉnh Yên Bái,10
+11,17,Tỉnh Hoà Bình,11
+12,19,Tỉnh Thái Nguyên,12
+13,20,Tỉnh Lạng Sơn,13
+14,22,Tỉnh Quảng Ninh,14
+15,24,Tỉnh Bắc Giang,15
+16,25,Tỉnh Phú Thọ,16
+17,26,Tỉnh Vĩnh Phúc,17
+18,27,Tỉnh Bắc Ninh,18
+19,30,Tỉnh Hải Dương,19
+20,31,Thành phố Hải Phòng,20
+21,33,Tỉnh Hưng Yên,21
+22,34,Tỉnh Thái Bình,22
+23,35,Tỉnh Hà Nam,23
+24,36,Tỉnh Nam Định,24
+25,37,Tỉnh Ninh Bình,25
+26,38,Tỉnh Thanh Hóa,26
+27,40,Tỉnh Nghệ An,27
+28,42,Tỉnh Hà Tĩnh,28
+29,44,Tỉnh Quảng Bình,29
+30,45,Tỉnh Quảng Trị,30
+31,46,Tỉnh Thừa Thiên Huế,31
+32,48,Thành phố Đà Nẵng,32
+33,49,Tỉnh Quảng Nam,33
+34,51,Tỉnh Quảng Ngãi,34
+35,52,Tỉnh Bình Định,35
+36,54,Tỉnh Phú Yên,36
+37,56,Tỉnh Khánh Hòa,37
+38,58,Tỉnh Ninh Thuận,38
+39,60,Tỉnh Bình Thuận,39
+40,62,Tỉnh Kon Tum,40
+41,64,Tỉnh Gia Lai,41
+42,66,Tỉnh Đắk Lắk,42
+43,67,Tỉnh Đắk Nông,43
+44,68,Tỉnh Lâm Đồng,44
+45,70,Tỉnh Bình Phước,45
+46,72,Tỉnh Tây Ninh,46
+47,74,Tỉnh Bình Dương,47
+48,75,Tỉnh Đồng Nai,48
+49,77,Tỉnh Bà Rịa - Vũng Tàu,49
+50,79,Thành phố Hồ Chí Minh,50
+51,80,Tỉnh Long An,51
+52,82,Tỉnh Tiền Giang,52
+53,83,Tỉnh Bến Tre,53
+54,84,Tỉnh Trà Vinh,54
+55,86,Tỉnh Vĩnh Long,55
+56,87,Tỉnh Đồng Tháp,56
+57,89,Tỉnh An Giang,57
+58,91,Tỉnh Kiên Giang,58
+59,92,Thành phố Cần Thơ,59
+60,93,Tỉnh Hậu Giang,60
+61,94,Tỉnh Sóc Trăng,61
+62,95,Tỉnh Bạc Liêu,62
+63,96,Tỉnh Cà Mau,63

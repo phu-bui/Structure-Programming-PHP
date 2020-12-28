@@ -1,0 +1,3 @@
+id,name,email,email_verified_at,password,remember_token,created_at,updated_at
+1,User,user@gmail.com,NULL,user01,NULL,NULL,NULL
+2,User2,user2@gmail.com,NULL,user02,NULL,NULL,NULL

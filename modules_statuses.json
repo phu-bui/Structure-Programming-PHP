@@ -1,0 +1,8 @@
+{
+    "Admin": true,
+    "Web": true,
+    "Product": true,
+    "User": true,
+    "Order": true,
+    "Ship": true
+}

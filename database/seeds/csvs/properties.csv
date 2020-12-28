@@ -1,0 +1,17 @@
+id,property_type_id,product_id,value,filterable
+1,1,1,Apple,1
+2,2,1,0.41–1.61cm x 30.41cm x 21.24cm,0
+3,3,1,1.29kg,0
+4,4,1,LED-backlit display with IPS technology,0
+5,5,1,13.3,0
+6,6,1,2560 x 1600 pixels,0
+7,7,1,MacOS,0
+8,8,1,macOS,0
+9,9,1,"1.1GHz dual-core Intel Core i3, Turbo Boost up to 3.2GHz, with 4MB L3 cache",0
+10,10,1,Intel Iris Plus Graphics,0
+11,11,1,256GB PCIe-based SSD,0
+12,12,1,8GB of 3733MHz LPDDR4X,0
+13,13,1,"802.11ac Wi-Fi wireless networking, IEEE 802.11a/b/g/n compatible",0
+14,14,1,Bluetooth 5.0,0
+15,15,1,2 cổng Thunderbolt 3 (USB-C) ports with support for:  Charging  DisplayPort  Thunderbolt (up to 40Gb/s)  USB 3.1 Gen 2 (up to 10Gb/s),0
+16,16,1,"9.9‑watt‑hour lithium‑polymer battery, 30W USB-C Power Adapter; USB-C power port",0

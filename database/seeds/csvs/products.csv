@@ -1,0 +1,7 @@
+id,product_sku,brand_id,slug,name,image,price,cost_price,short_description,long_description,quantity,status
+1,ao-phong-nam,1,ao-phong-oversized-volkath,ÁO PHÔNG OVERSIZED VOLKATH,https://product.hstatic.net/1000299894/product/1.2.02.3.09.002.220.01.10100011__1__5cf631eaf3bf4a028459016a9029d571.jpg,25300,28990,short_description,long_description,5,1
+2,ao-phong-nam,1,ao-phong-oversized,ÁO PHÔNG OVERSIZE,https://product.hstatic.net/1000299894/product/1.0.02.2.02.002.220.01.10200011__1__d3f3c142a27141d58b07b39e3f758d6e.jpg,300000,350000,short_description,Áo phông nam Boozilla in Starwars,1,1
+3,ao-phong-nam,1,ao-phong-oversized,ÁO PHÔNG OVERSIZE,https://product.hstatic.net/1000299894/product/1.2.02.3.18.002.220.23.10100011__1__1ac55f02578d471796ac34dff91669d4.jpg,300000,350000,short_description,Áo phông nam Boozilla in Starwars,1,1
+4,ao-phong-nam,1,ao-phong-oversized-volkath,ÁO PHÔNG OVERSIZED VOLKATH,https://product.hstatic.net/1000299894/product/1.2.02.3.09.002.220.01.10100011__1__5cf631eaf3bf4a028459016a9029d571.jpg,25300,28990,short_description,long_description,5,1
+5,ao-phong-nam,1,ao-phong-oversized,ÁO PHÔNG OVERSIZE,https://product.hstatic.net/1000299894/product/1.0.02.2.02.002.220.01.10200011__1__d3f3c142a27141d58b07b39e3f758d6e.jpg,300000,350000,short_description,Áo phông nam Boozilla in Starwars,1,1
+6,ao-phong-nam,1,ao-phong-oversized,ÁO PHÔNG OVERSIZE,https://product.hstatic.net/1000299894/product/1.2.02.3.18.002.220.23.10100011__1__1ac55f02578d471796ac34dff91669d4.jpg,300000,350000,short_description,Áo phông nam Boozilla in Starwars,1,1

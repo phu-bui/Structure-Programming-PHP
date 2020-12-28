@@ -1,0 +1,17 @@
+id,property_name,filterable,sort_order
+1,Hãng sản xuất,1,1
+2,Kích thước,0,2
+3,Trọng lượng,0,3
+4,Loại màn hình,0,4
+5,Kích thước màn hình,0,5
+6,Độ phân giải màn hình,0,6
+7,Hệ điều hành,0,7
+8,Phiên bản hệ điều hành,0,8
+9,CPU,1,9
+10,VGA,1,10
+11,Ổ cứng,1,11
+12,RAM,1,12
+13,WLAN,0,13
+14,Bluetooth,0,14
+15,USB,0,15
+16,Pin,0,16

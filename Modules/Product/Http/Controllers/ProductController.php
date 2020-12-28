@@ -1,25 +1,35 @@
 <?php
 
 namespace Modules\Product\Http\Controllers;
-
+use App\Services\ProductService;
 use Illuminate\Contracts\Support\Renderable;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
 session_start();
 use DB;
+use Modules\User\Http\Controllers\AdminBaseController;
 use Session;
 
-class ProductController extends Controller
+class ProductController extends AdminBaseController
 {
+
+    protected $productService;
+
+    public function __construct(ProductService $productService) {
+        parent::__construct();
+
+        $this->productService = $productService;
+    }
+
     public function index() {
         $products = $this->productService->getListProduct();
-        return view('admin::products.index', compact('products'));
+        return view('admin.products.index', compact('products'));
     }
 
     public function add_product(){
         $brand_product = DB::table('brands')->orderby('id', 'desc')->get();
 
-        return view('admin::products.add_product')->with('brand_product', $brand_product);
+        return view('admin.products.add_product')->with('brand_product', $brand_product);
     }
 
     public function save_product(Request $request){
@@ -44,7 +54,7 @@ class ProductController extends Controller
     public function edit_product($product_id){
         $brand_product = DB::table('brands')->orderby('id', 'desc')->get();
         $edit_product = DB::table('products')->where('id', $product_id)->get();
-        return view('admin::products.edit_product')->with('products', $edit_product)->with('brand_product', $brand_product);
+        return view('admin.products.edit_product')->with('products', $edit_product)->with('brand_product', $brand_product);
     }
 
     public function update_product(Request $request, $product_id){
@@ -69,6 +79,13 @@ class ProductController extends Controller
         DB::table('products')->where('id', $product_id)->delete();
         Session::put('message', 'Delete product successful!');
         return redirect()->route('admin.products.list');
+    }
+
+    public function search(Request $req) {
+        $brand_product = DB::table('brands')->orderby('id', 'desc')->get();
+        $keywords = $req->keywords_submit;
+        $search_product = DB::table('products')->where('name', 'like', '%'.$keywords.'%')->get();
+        return view('products.search',compact('search_product'))->with('brand_product', $brand_product);
     }
 
 }

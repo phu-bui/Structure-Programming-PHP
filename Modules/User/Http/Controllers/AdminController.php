@@ -2,6 +2,7 @@
 
 namespace Modules\User\Http\Controllers;
 
+use App\Http\Controllers\BaseController;
 use Illuminate\Contracts\Support\Renderable;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
@@ -12,8 +13,10 @@ use App\Entities\Admin;
 use App\Services\Utils\AuthUtils;
 
 
-class AdminController extends Controller
+class AdminController extends BaseController
 {
+
+
     public function showLoginForm()
     {
         return view('user::auth.login');

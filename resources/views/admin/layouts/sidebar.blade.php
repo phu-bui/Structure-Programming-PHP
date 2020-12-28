@@ -28,11 +28,13 @@
 
     <!-- Nav Item - Pages Collapse Menu -->
     <li class="nav-item">
+        <a class="nav-link" href="{{route('admin.products.list')}}">
             <i class="fas fa-fw fa-chart-area"></i>
             <span>Product list</span></a>
     </li>
 
     <li class="nav-item">
+        <a class="nav-link" href="{{route('admin.add_product')}}">
             <i class="fas fa-fw fa-chart-area"></i>
             <span>Add Product</span></a>
     </li>

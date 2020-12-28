@@ -63,7 +63,7 @@
                             <li class="dropdown"><a>Account<i class="fa fa-angle-down"></i></a>
                                 <ul role="menu" class="sub-menu" style="background-color: grey">
                                     <div class="col-sm-9">
-                                        <li><a class="" style="background-color: grey" href="/profile">
+                                        <li><a class="" style="background-color: grey" href="">
                                                 <?php
                                                 $user = \App\Entities\User::where('email', session('data-signin')['email'])->first();
                                                 echo $user->name;

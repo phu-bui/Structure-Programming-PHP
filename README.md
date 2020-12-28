@@ -78,25 +78,19 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
 
 ## Run project
-### Step1: Clone project git@github.com:badung7576x/web-programming-project.git
-
-### Step2: Run command:
-
-```$ cd web-programming-project```
-
-### Step3: Run command to install library:
+### Step1: Run command to install library:
 
 ```$ composer install```
 
-### Step4: Run command to create .env file:
+### Step2: Run command to create .env file:
 
 ```$ cp .env.example .env```
 
-### Step5: Run command to generate key:
+### Step3: Run command to generate key:
 
 ```$ php artisan key:generate```
 
-### Step6: Make database:
+### Step4: Make database:
 
 Go to xampp in local make database.
 
@@ -106,6 +100,6 @@ Run script to make table in database
 
 ```$ php artisan migrate --seed```
 
-### Step6: Run command to start project
+### Step5: Run command to start project
 
 ```$ php artisan serve```

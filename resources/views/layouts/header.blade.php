@@ -55,6 +55,34 @@
                         </div>
                     </div>
                 </div>
+                <div class="col-sm-8">
+                    <div class="shop-menu pull-right">
+                        <ul class="nav navbar-nav">
+                            <?php if(session()->has('data-signin')){ ?>
+
+                            <li class="dropdown"><a>Account<i class="fa fa-angle-down"></i></a>
+                                <ul role="menu" class="sub-menu" style="background-color: grey">
+                                    <div class="col-sm-9">
+                                        <li><a class="" style="background-color: grey" href="/profile">
+                                                <?php
+                                                $user = \App\Entities\User::where('email', session('data-signin')['email'])->first();
+                                                echo $user->name;
+                                                ?></a></li>
+                                        <li><a class="" style="background-color: grey" href="">Settings</a></li>
+                                        <li><a class="" style="background-color: grey" href="{{route('web.logout')}}">Logout</a></li>
+                                    </div>
+                                </ul>
+                            </li>
+
+                            <?php } else { ?>
+                            <li><a href="{{route('web.login')}}"><i class="fa fa-lock"></i> Login</a></li>
+                            <?php } ?>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><!--/header-middle-->
 
     <div class="header-bottom"><!--header-bottom-->
         <div class="container">
@@ -70,6 +98,7 @@
                     </div>
                     <div class="mainmenu pull-left">
                         <ul class="nav navbar-nav collapse navbar-collapse">
+                            <li><a href="{{route('web.home')}}" class="active">Home</a></li>
                             <!--<li class="dropdown"><a href="#">Shop<i class="fa fa-angle-down"></i></a>
                                 <ul role="menu" class="sub-menu">
                                     <li><a href="shop.html">Products</a></li>
@@ -89,7 +118,13 @@
                     </div>
                 </div>
                 <div class="col-sm-5">
-
+                    <form action="{{url('/search')}}" method="POST">
+                        {{csrf_field()}}
+                        <div class="search_box pull-right">
+                            <input type="text" name="keywords_submit" placeholder="Search"/>
+                            <input type="submit" style="margin-top: 0px; color: white; " name="search_item" class="btn btn-primary btn-sm" value="Search">
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>

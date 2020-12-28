@@ -27,7 +27,7 @@ class ProductController extends AdminBaseController
     }
 
     public function add_product(){
-        $brand_product = DB::table('brands')->orderby('id', 'desc')->get();
+        $brand_product = DB::table('brands')->orderby('brand_id', 'desc')->get();
 
         return view('admin.products.add_product')->with('brand_product', $brand_product);
     }
@@ -52,7 +52,7 @@ class ProductController extends AdminBaseController
     }
 
     public function edit_product($product_id){
-        $brand_product = DB::table('brands')->orderby('id', 'desc')->get();
+        $brand_product = DB::table('brands')->orderby('brand_id', 'desc')->get();
         $edit_product = DB::table('products')->where('id', $product_id)->get();
         return view('admin.products.edit_product')->with('products', $edit_product)->with('brand_product', $brand_product);
     }
@@ -82,7 +82,7 @@ class ProductController extends AdminBaseController
     }
 
     public function search(Request $req) {
-        $brand_product = DB::table('brands')->orderby('id', 'desc')->get();
+        $brand_product = DB::table('brands')->orderby('brand_id', 'desc')->get();
         $keywords = $req->keywords_submit;
         $search_product = DB::table('products')->where('name', 'like', '%'.$keywords.'%')->get();
         return view('products.search',compact('search_product'))->with('brand_product', $brand_product);

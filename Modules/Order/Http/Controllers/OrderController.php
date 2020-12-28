@@ -74,7 +74,7 @@ class OrderController extends Controller
         $meta_title = "Đăng nhập thanh toán";
         $url_canonical = $request->url();
 
-        $brand_product = DB::table('brands')->orderby('id', 'desc')->get();
+        $brand_product = DB::table('brands')->orderby('brand_id', 'desc')->get();
 
         return view('checkout.show_checkout')
             ->with('brand_product', $brand_product)
@@ -103,7 +103,7 @@ class OrderController extends Controller
         $meta_keywords = "Đăng nhập thanh toán";
         $meta_title = "Đăng nhập thanh toán";
         $url_canonical = $request->url();
-        $brand_product = DB::table('brands')->orderby('id', 'desc')->get();
+        $brand_product = DB::table('brands')->orderby('brand_id', 'desc')->get();
 
         return view('checkout.payment')->with('brand_product', $brand_product)
             ->with('meta_desc', $meta_desc)
@@ -159,7 +159,7 @@ class OrderController extends Controller
 
                 }
                 if ($data['name'] == 'handcash') {
-                    $brand_product = DB::table('brands')->orderby('id', 'desc')->get();
+                    $brand_product = DB::table('brands')->orderby('brand_id', 'desc')->get();
                     foreach (Session::get('Cart')->products as $product) {
                         $product_data = DB::table('products')->where('id', $order_detail_data['product_id'])->get();
                         foreach ($product_data as $item) {

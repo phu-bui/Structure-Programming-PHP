@@ -4,5 +4,6 @@
     "Product": true,
     "User": true,
     "Order": true,
-    "Ship": true
+    "Ship": true,
+    "Brand": true
 }

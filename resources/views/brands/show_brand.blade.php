@@ -1,4 +1,4 @@
-@extends('web::layouts.master')
+@extends('layouts.master')
 @section('content')
     <section>
         <div class="container">
@@ -38,8 +38,7 @@
 
                         @endforeach
                         @foreach($product_by_brand as $key => $product)
-                        @foreach($brand_product as $key => $brand)
-                        @endforeach
+
                         <div class="col-sm-4">
                             <div class="product-image-wrapper">
 

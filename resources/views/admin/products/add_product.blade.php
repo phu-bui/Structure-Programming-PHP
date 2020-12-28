@@ -37,7 +37,7 @@
                             <label for="brand_id">Brand</label>
                             <select id="brand_id" name="brand_id" class="form-control">
                                 @foreach($brand_product as $key => $brand)
-                                    <option value="{{$brand->id}}">{{$brand->brand_name}}</option>
+                                    <option value="{{$brand->brand_id}}">{{$brand->brand_name}}</option>
                                 @endforeach
                             </select>
                         </div>

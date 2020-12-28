@@ -11,6 +11,13 @@
 |
 */
 
-Route::prefix('order')->group(function() {
-    Route::get('/', 'OrderController@index');
+Route::group(['prefix' => '', 'namespace' => '\Modules\Order\Http\Controllers'], function()
+{
+    Route::get('/cart', 'OrderController@cart')->name('web.cart');
+    Route::get('/addcart/{id}', 'OrderController@user_addCart')->name('web.add_cart');
+    Route::get('/Delete-Item-Cart/{id}', 'OrderController@user_DeleteItemCart')->name('web.delete_item_cart');
+    Route::get('/checkout', 'OrderController@checkout')->name('web.checkout');
+    Route::get('/save-checkout-customer', 'OrderController@save_checkout_customer')->name('web.save-checkout-customer');
+    Route::get('/payment', 'OrderController@payment')->name('web.payment');
+    Route::get('/order-place', 'OrderController@order_place')->name('web.order-place');
 });

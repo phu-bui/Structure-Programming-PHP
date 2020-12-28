@@ -58,7 +58,30 @@
                 <div class="col-sm-8">
                     <div class="shop-menu pull-right">
                         <ul class="nav navbar-nav">
-                            <?php if(session()->has('data-signin')){ ?>
+                            <?php
+                            if(session()->has('data-signin')){
+                            $user = \App\Entities\User::where('email', session('data-signin')['email'])->first();
+                            $user_id = $user->id;
+                            $shipping_id = Session::get('shipping_id');
+                            if($shipping_id==NULL){
+                            ?>
+                            <li><a href="{{route('web.checkout')}}"><i class="fa fa-crosshairs"></i>Checkout</a> </li>
+                            <?php
+                            }
+                            else{
+                            ?>
+                            <li><a href="{{route('web.payment')}}"><i class="fa fa-crosshairs"></i>Checkout</a> </li>
+                            <?php
+                            }
+                            }
+                            else{
+                            ?>
+                            <li><a href="{{route('web.login')}}"><i class="fa fa-crosshairs"></i>Checkout</a> </li>
+                            <?php
+                            }
+                            ?>
+                            <li><a href="{{route('web.cart')}}"><i class="fa fa-shopping-cart"></i> Cart</a></li>
+                        <?php if(session()->has('data-signin')){ ?>
 
                             <li class="dropdown"><a>Account<i class="fa fa-angle-down"></i></a>
                                 <ul role="menu" class="sub-menu" style="background-color: grey">

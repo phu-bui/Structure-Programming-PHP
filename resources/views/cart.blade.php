@@ -1,4 +1,4 @@
-@extends('web::layouts.master')
+@extends('layouts.master')
 @section('content')
     <section id="cart_items">
         <div class="container">
